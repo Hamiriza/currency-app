@@ -1,0 +1,33 @@
+.listing {
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+
+  &-tile {
+    padding: 1em;
+    border: 1px solid #444;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+    .symbol, .rate {
+      font-size: 1.5em;
+      margin-bottom: 0.25em;
+    }
+
+    .rate {
+      float: right;
+    }
+
+    .name {
+      color: #666;
+    }
+  }
+}

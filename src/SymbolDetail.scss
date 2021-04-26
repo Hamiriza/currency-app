@@ -1,0 +1,47 @@
+.detail {
+  padding: 2em 1em;
+
+  .symbol {
+    font-size: 1.5em;
+  }
+  
+  .name {
+    color: #666;
+    margin-bottom: 1em;
+  }
+
+  .selector {
+    padding: 1em 0;
+    margin-bottom: 1em;
+
+    div {
+      display: inline-block;
+      padding: 0.4em 0.5em;
+      min-width: 5em;
+      font-size: 1.1em;
+      text-align: center;
+      border: 1px solid #666;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        border-right: 0;
+      }
+
+      &.active {
+        border-color: #999;
+        background: #eee;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 1px solid #666;
+    padding: 0.5em;
+    min-width: 10em;
+    text-align: center;
+  }
+}
